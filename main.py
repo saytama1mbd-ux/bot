@@ -8,6 +8,11 @@ from threading import Thread
 from Pb2 import DEcwHisPErMsG_pb2 , MajoRLoGinrEs_pb2 , PorTs_pb2 , MajoRLoGinrEq_pb2 , sQ_pb2 , Team_msg_pb2
 from cfonts import render, say
 
+from keep_alive import keep_alive
+
+keep_alive()
+# এর নিচে আপনার বটের আগের সব কোড থাকবে...
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  
 
 # Enhanced Configuration Variables
