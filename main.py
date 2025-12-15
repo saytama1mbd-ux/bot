@@ -943,33 +943,41 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                         elif inPuTMsG.strip().startswith('/help'):
                             update_command_stats("help")
                             try:
-                                # Part 1: Group Commands (আপনার দেওয়া ডিজাইন)
-                                message = f"""[C][B][24F0FF]╔═⟦⟦ GROUP COMMAND CONSOLE ⟧⟧═╗
+                                # Part 1: Team & Action Commands
+                                message = f"""[C][B][24F0FF]╔═⟦⟦ HELP MENU (1/2) ⟧⟧═╗
 [C][B][24F0FF]║
-[C][B][24F0FF]╟─⟨ [FFFFFF]/3 ⟩────⟪ [80DEEA]3-PLAYER GROUP ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/5 ⟩────⟪ [80DEEA]5-PLAYER GROUP ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/6 ⟩────⟪ [80DEEA]6-PLAYER GROUP ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/solo ⟩───⟪ [80DEEA]LEAVE GROUP ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/join ⟮code⟯ ⟩─⟪ [80DEEA]JOIN TEAM ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/3 /5 /6 ⟩──⟪ [80DEEA]MAKE GROUP ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/solo ⟩─────⟪ [80DEEA]LEAVE SQUAD ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/join ⟮cd⟯ ⟩──⟪ [80DEEA]JOIN TEAM ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/em ⟮u⟯ ⟮id⟯ ⟩─⟪ [80DEEA]SEND EMOTE ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/nm ⟩───────⟪ [80DEEA]TEAM EMOTE ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/spam ⟮uid⟯ ⟩─⟪ [80DEEA]REQ SPAM ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/like ⟮uid⟯ ⟩─⟪ [80DEEA]SEND LIKES ⟫
 [C][B][24F0FF]║
-[C][B][24F0FF]╚══════════════════════════╝"""
+[C][B][24F0FF]╚══════════════════════╝"""
                                 P = await SEndMsG(response.Data.chat_type, message, uid, chat_id, key, iv)
                                 await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P)
                                 EM = await FS(key, iv)
                                 await SEndPacKeT(whisper_writer, online_writer, 'OnLine', EM)
                                 
-                                # Part 2: Extra Commands
-                                confirm_msg = f"""[C][B][24F0FF]╔═⟦⟦ EXTRA COMMANDS ⟧⟧═╗
+                                # Part 2: Info & Admin Tools (All Included)
+                                confirm_msg = f"""[C][B][24F0FF]╔═⟦⟦ HELP MENU (2/2) ⟧⟧═╗
 [C][B][24F0FF]║
-[C][B][24F0FF]╟─⟨ [FFFFFF]/like ⟮uid⟯ ⟩─⟪ [80DEEA]SEND LIKES ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/info ⟮uid⟯ ⟩─⟪ [80DEEA]PLAYER INFO ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/clan ⟮id⟯ ⟩──⟪ [80DEEA]CLAN INFO ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/em ⟮uid⟯ ⟮id⟯ ⟩─⟪ [80DEEA]EMOTE ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/visit ⟮uid⟯ ⟩⟪ [80DEEA]VISIT ID ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/info ⟮uid⟯ ⟩─⟪ [80DEEA]ACC INFO ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/clan ⟮id⟯ ⟩──⟪ [80DEEA]GUILD INFO ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/ai ⟮msg⟯ ⟩───⟪ [80DEEA]TALK AI ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/mute ⟩─────⟪ [80DEEA]MUTE BOT ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/unmute ⟩───⟪ [80DEEA]UNMUTE BOT ⟫
 [C][B][24F0FF]╟─⟨ [FFFFFF]/boost ⟩────⟪ [80DEEA]SPEED UP ⟫
-[C][B][24F0FF]╟─⟨ [FFFFFF]/admin ⟩────⟪ [80DEEA]DEV INFO ⟫
+[C][B][24F0FF]╟─⟨ [FFFFFF]/admin ⟩────⟪ [80DEEA]OWNER INFO ⟫
 [C][B][24F0FF]║
-[C][B][24F0FF]╚══════════════════════════╝
+[C][B][24F0FF]╚══════════════════════╝
 [FFB300]⚡ Sʜɪʜᴀʙ•bot"""
+                                P_confirm = await SEndMsG(response.Data.chat_type, confirm_msg, uid, chat_id, key, iv)
+                                await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P_confirm)
+                            except:
+                                pass
                                 P_confirm = await SEndMsG(response.Data.chat_type, confirm_msg, uid, chat_id, key, iv)
                                 await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P_confirm)
                             except:
