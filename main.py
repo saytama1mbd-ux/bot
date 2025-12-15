@@ -574,7 +574,7 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                         # DEBUG COMMAND - Always responds first
                         if inPuTMsG.strip() == "/debug":
                             update_command_stats("debug")
-                            debug_msg = f"[FF0000]✅ NoTmeowL BOT ONLINE! UID: {uid}"
+                            debug_msg = f"[FF0000]✅ SHIHAB💮 BOT ONLINE! UID: {uid}"
                             P = await SEndMsG(response.Data.chat_type, debug_msg, uid, chat_id, key, iv)
                             await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P)
                             continue
@@ -594,20 +594,20 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
 [FFD700]✨ Developed By SHIHAB"""
                             else:
                                 message = f"""[C][B][FF0000]╔══════════╗
-[FFFFFF]✨ folow on Instagram   
-[FFFFFF]          ⚡ NoTmeowl❤️  
+[FFFFFF]✨ Subscribe @SAYTAMA1M-VIP   
+[FFFFFF]          ⚡ SHIHAN❤️  
 [FFFFFF]                   thank for support 
 [FF0000]╠══════════╣
-[FFD700]⚡ OWNER : [FFFFFF]NoTmeowl    
+[FFD700]⚡ OWNER : [FFFFFF]SHIHAB    
 [FFD700]✨ Name on instagram : [FFFFFF]Hwk_pushpendra❤️  
 [FF0000]╚══════════╝
-[FFD700]✨ Developer —͟͞͞ </> NoTmeowL  ⚡"""
+[FFD700]✨ Developer —͟͞͞ </> SHIHAB💮  ⚡"""
                             
                             try:
                                 P = await SEndMsG(response.Data.chat_type, message, uid, chat_id, key, iv)
                                 await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P)
                             except Exception as e:
-                                fallback_msg = "[FF0000]NoTmeowL BOT online! Use /help"
+                                fallback_msg = "[FF0000]SHIHAB💮 BOT online! Use /help"
                                 P = await SEndMsG(response.Data.chat_type, fallback_msg, uid, chat_id, key, iv)
                                 await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P)
                             continue
@@ -692,7 +692,7 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                         # ADMIN COMMANDS (enhanced and shortened)
                         if inPuTMsG.startswith('/stop') and is_admin(uid):
                             update_command_stats("stop")
-                            stop_msg = f"[FF0000]NoTmeowL BOT stopping..."
+                            stop_msg = f"[FF0000]SHIHAB💮 BOT stopping..."
                             P = await SEndMsG(response.Data.chat_type, stop_msg, uid, chat_id, key, iv)
                             await SEndPacKeT(whisper_writer, online_writer, 'ChaT', P)
                             await connection_pool.close()
@@ -1238,7 +1238,7 @@ async def MaiiiinE():
     print('')
     print(f" - Sʜɪʜᴀʙ•bot STarTinG And OnLine on TarGet : {TarGeT} | BOT NAME : {acc_name}\n")
     print(f" - BoT sTaTus > GooD | OnLinE ! (:")    
-    print(f" - NoTmeowl | Bot Uptime: {time.strftime('%H:%M:%S', time.gmtime(time.time() - bot_start_time))}")    
+    print(f" - SHIHAB💮 | Bot Uptime: {time.strftime('%H:%M:%S', time.gmtime(time.time() - bot_start_time))}")    
     await asyncio.gather(task1 , task2)
     
 async def StarTinG():
