@@ -1,4 +1,5 @@
-import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re , socket , threading , ssl , pytz , aiohttp , asyncio
+from keep_alive import keep_alive
+keep_alive() import requests , os , psutil , sys , jwt , pickle , json , binascii , time , urllib3 , base64 , datetime , re , socket , threading , ssl , pytz , aiohttp , asyncio
 from protobuf_decoder.protobuf_decoder import Parser
 from xC4 import * ; from xHeaders import *
 from datetime import datetime
@@ -7,11 +8,6 @@ from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
 from Pb2 import DEcwHisPErMsG_pb2 , MajoRLoGinrEs_pb2 , PorTs_pb2 , MajoRLoGinrEq_pb2 , sQ_pb2 , Team_msg_pb2
 from cfonts import render, say
-
-from keep_alive import keep_alive
-
-keep_alive()
-# এর নিচে আপনার বটের আগের সব কোড থাকবে...
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)  
 
@@ -595,11 +591,11 @@ async def TcPChaT(ip, port, AutHToKen, key, iv, LoGinDaTaUncRypTinG, ready_event
                             else:
                                 message = f"""[C][B][FF0000]╔══════════╗
 [FFFFFF]✨ Subscribe @SAYTAMA1M-VIP   
-[FFFFFF]          ⚡ SHIHAN❤️  
+[FFFFFF]          ⚡ SHIHAB❤️  
 [FFFFFF]                   thank for support 
 [FF0000]╠══════════╣
 [FFD700]⚡ OWNER : [FFFFFF]SHIHAB    
-[FFD700]✨ Name on instagram : [FFFFFF]Hwk_pushpendra❤️  
+[FFD700]✨ Name on Telegram : [FFFFFF]saytama420❤️  
 [FF0000]╚══════════╝
 [FFD700]✨ Developer —͟͞͞ </> SHIHAB💮  ⚡"""
                             
